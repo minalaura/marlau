@@ -112,6 +112,20 @@ export default function GruenderinPage() {
                   Social Impact Award
                 </p>
               </div>
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/IHK-Mittleres-Ruhrgebiet.png"
+                  alt="IHK Mittleres Ruhrgebiet"
+                  width={160}
+                  height={56}
+                  className="h-8 w-auto"
+                />
+                <p className="text-xs leading-relaxed text-navy/50">
+                  Zertifizierte Datenschutzbeauftragte
+                  <br />
+                  IHK Mittleres Ruhrgebiet
+                </p>
+              </div>
             </div>
 
             <h2 className="mt-12 text-xs uppercase tracking-widest2 text-navy/40">

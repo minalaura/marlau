@@ -28,9 +28,15 @@ export default function GruenderinPage() {
       <Container>
         <div className="grid gap-14 md:grid-cols-[0.85fr_1.15fr] md:items-start">
           <div className="md:sticky md:top-28">
-            {/* Platzhalter für professionelles Porträt der Gründerin */}
-            <div className="aspect-[4/5] w-full bg-stone/25 border border-navy/10 flex items-center justify-center">
-              <span className="font-serif text-6xl text-navy/20">ML</span>
+            <div className="relative aspect-[4/5] w-full overflow-hidden border border-navy/10">
+              <Image
+                src="/2026_06_Profilbild.png"
+                alt="Marina Laura Schneider"
+                fill
+                priority
+                sizes="(min-width: 768px) 40vw, 90vw"
+                className="object-cover"
+              />
             </div>
           </div>
 

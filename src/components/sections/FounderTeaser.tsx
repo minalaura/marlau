@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 
@@ -6,9 +7,14 @@ export function FounderTeaser() {
     <section className="bg-navy py-24 md:py-32 text-ivory">
       <Container>
         <div className="grid gap-12 md:grid-cols-[0.9fr_1.1fr] md:items-center">
-          {/* Platzhalter für Porträt der Gründerin — echtes Bild ergänzen */}
-          <div className="aspect-[4/5] w-full max-w-sm bg-ivory/5 border border-ivory/10 flex items-center justify-center">
-            <span className="font-serif text-6xl text-ivory/20">ML</span>
+          <div className="relative aspect-[4/5] w-full max-w-sm overflow-hidden border border-ivory/10">
+            <Image
+              src="/2026_06_Profilbild.png"
+              alt="Marina Laura Schneider"
+              fill
+              sizes="(min-width: 768px) 30vw, 90vw"
+              className="object-cover"
+            />
           </div>
 
           <div>

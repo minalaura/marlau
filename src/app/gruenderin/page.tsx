@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 
@@ -63,6 +64,26 @@ export default function GruenderinPage() {
                 Zusätzlich engagiert sie sich als Mentorin im europäischen
                 Social-Impact-Umfeld und begleitet Gründerinnen und Gründer bei der
                 Entwicklung skalierbarer, wirkungsorientierter Geschäftsmodelle.
+              </p>
+              <p>
+                Als Dozentin des Gesamtverbands der Personaldienstleister e.V. (GVP)
+                referiert sie in Online-Seminaren zu arbeitsrechtlichen Themen,
+                darunter Krisenmanagement und betriebsbedingte Kündigungen.
+              </p>
+            </div>
+
+            <div className="mt-8 flex items-center gap-4 border-t border-navy/10 pt-6">
+              <Image
+                src="/GVP-Logo.png"
+                alt="Gesamtverband der Personaldienstleister e.V. (GVP)"
+                width={48}
+                height={64}
+                className="h-14 w-auto"
+              />
+              <p className="text-xs leading-relaxed text-navy/50">
+                Dozentin für Arbeitsrecht
+                <br />
+                Gesamtverband der Personaldienstleister e.V.
               </p>
             </div>
 

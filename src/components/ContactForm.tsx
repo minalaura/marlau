@@ -12,6 +12,7 @@ const labelClasses = "text-xs uppercase tracking-widest2 text-navy/50";
 export function ContactForm() {
   const searchParams = useSearchParams();
   const ergebnis = searchParams.get("ergebnis");
+  const anliegenPrefill = searchParams.get("anliegen");
   const [submitted, setSubmitted] = useState(false);
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -97,7 +98,13 @@ export function ContactForm() {
 
       <label className="flex flex-col gap-2">
         <span className={labelClasses}>Anliegen *</span>
-        <textarea required name="anliegen" rows={5} className={inputClasses} />
+        <textarea
+          required
+          name="anliegen"
+          rows={5}
+          className={inputClasses}
+          defaultValue={anliegenPrefill ?? undefined}
+        />
       </label>
 
       <fieldset className="flex flex-col gap-2">

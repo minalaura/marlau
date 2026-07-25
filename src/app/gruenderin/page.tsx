@@ -121,7 +121,12 @@ export default function GruenderinPage() {
                   className="h-8 w-auto"
                 />
                 <p className="text-xs leading-relaxed text-navy/50">
-                  Zertifizierte Datenschutzbeauftragte
+                  <a
+                    href="/leistungen/datenschutzbeauftragter"
+                    className="underline hover:text-navy"
+                  >
+                    Zertifizierte Datenschutzbeauftragte
+                  </a>
                   <br />
                   IHK Mittleres Ruhrgebiet
                 </p>

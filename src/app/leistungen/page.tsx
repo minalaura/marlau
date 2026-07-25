@@ -47,12 +47,22 @@ export default function LeistungenPage() {
                 </p>
 
                 {service.slug === "governance-legal-strategy" ? (
-                  <p className="mt-4 text-xs leading-relaxed text-navy/50 italic">
-                    MARLAU ist keine Rechtsanwaltskanzlei. Soweit eine eigenständige
-                    Rechtsberatung erforderlich ist, erfolgt diese nur im rechtlich
-                    zulässigen Rahmen oder in Zusammenarbeit mit entsprechend
-                    zugelassenen Partnern.
-                  </p>
+                  <>
+                    <p className="mt-4 text-xs leading-relaxed text-navy/50 italic">
+                      MARLAU ist keine Rechtsanwaltskanzlei. Soweit eine eigenständige
+                      Rechtsberatung erforderlich ist, erfolgt diese nur im rechtlich
+                      zulässigen Rahmen oder in Zusammenarbeit mit entsprechend
+                      zugelassenen Partnern.
+                    </p>
+                    <p className="mt-4 text-sm">
+                      <a
+                        href="/leistungen/datenschutzbeauftragter"
+                        className="underline text-navy hover:text-sea"
+                      >
+                        Mehr zu externer Datenschutzbeauftragter
+                      </a>
+                    </p>
+                  </>
                 ) : null}
               </div>
 

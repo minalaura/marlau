@@ -162,6 +162,28 @@ export const approachSteps = [
   },
 ];
 
+export type Event = {
+  date: string;
+  title: string;
+  organizer: string;
+  format: string;
+  description: string;
+  link: string;
+};
+
+export const events: Event[] = [
+  {
+    date: "2026-09-16",
+    title:
+      "Krisenmanagement in schwierigen Zeiten – betriebsbedingte Kündigungen praxisnah umsetzen",
+    organizer: "Gesamtverband der Personaldienstleister e.V. (GVP)",
+    format: "Online-Seminar",
+    description:
+      "Restrukturierung, betriebsbedingte Kündigungen und die Vermeidung von Kündigungsschutzklagen – praxisnah anhand realer Fallbeispiele.",
+    link: "https://personaldienstleister.de/seminar/krisenmanagement-in-schwierigen-zeiten-betriebsbedingte-kuendigungen-praxisnah-umsetzen-160926/",
+  },
+];
+
 export const principles = [
   {
     title: "Unabhängig",

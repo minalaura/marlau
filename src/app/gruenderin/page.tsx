@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 
@@ -167,6 +168,18 @@ export default function GruenderinPage() {
                   Interview, Gesamtverband der Personaldienstleister e.V. →
                 </p>
               </a>
+            </div>
+
+            <h2 className="mt-10 text-xs uppercase tracking-widest2 text-navy/40">
+              Vorträge &amp; Seminare
+            </h2>
+            <div className="mt-5 border-t border-navy/10 pt-4">
+              <Link
+                href="/gruenderin/vortraege"
+                className="text-sm text-navy underline hover:text-sea transition-colors"
+              >
+                Übersicht ansehen
+              </Link>
             </div>
 
             <div className="mt-12">

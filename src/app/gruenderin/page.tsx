@@ -17,6 +17,7 @@ const competencies = [
   "Legal Strategy",
   "Arbeitsrecht und People Governance",
   "Compliance",
+  "Datenschutz",
   "Transformation",
   "Social Impact Strategy",
   "Aufbau und Professionalisierung interner Funktionen",
@@ -75,6 +76,10 @@ export default function GruenderinPage() {
                 Als Dozentin des Gesamtverbands der Personaldienstleister e.V. (GVP)
                 referiert sie in Online-Seminaren zu arbeitsrechtlichen Themen,
                 darunter Krisenmanagement und betriebsbedingte Kündigungen.
+              </p>
+              <p>
+                Sie ist zertifizierte betriebliche Datenschutzbeauftragte (IHK
+                Mittleres Ruhrgebiet).
               </p>
             </div>
 

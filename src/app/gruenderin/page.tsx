@@ -67,8 +67,8 @@ export default function GruenderinPage() {
                 tragfähig ist.
               </p>
               <p>
-                Zusätzlich engagiert sie sich als Mentorin im europäischen
-                Social-Impact-Umfeld und begleitet Gründerinnen und Gründer bei der
+                Sie wurde mit dem Social Impact Award ausgezeichnet und engagiert
+                sich seither als Mentorin für Gründerinnen und Gründer bei der
                 Entwicklung skalierbarer, wirkungsorientierter Geschäftsmodelle.
               </p>
               <p>
@@ -78,19 +78,35 @@ export default function GruenderinPage() {
               </p>
             </div>
 
-            <div className="mt-8 flex items-center gap-4 border-t border-navy/10 pt-6">
-              <Image
-                src="/GVP-Logo.png"
-                alt="Gesamtverband der Personaldienstleister e.V. (GVP)"
-                width={48}
-                height={64}
-                className="h-14 w-auto"
-              />
-              <p className="text-xs leading-relaxed text-navy/50">
-                Dozentin für Krisenmanagement
-                <br />
-                Gesamtverband der Personaldienstleister e.V.
-              </p>
+            <div className="mt-8 flex flex-wrap items-center gap-x-10 gap-y-6 border-t border-navy/10 pt-6">
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/GVP-Logo.png"
+                  alt="Gesamtverband der Personaldienstleister e.V. (GVP)"
+                  width={48}
+                  height={64}
+                  className="h-14 w-auto"
+                />
+                <p className="text-xs leading-relaxed text-navy/50">
+                  Dozentin für Krisenmanagement
+                  <br />
+                  Gesamtverband der Personaldienstleister e.V.
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/312765-middle.png"
+                  alt="Social Impact Award"
+                  width={140}
+                  height={56}
+                  className="h-9 w-auto"
+                />
+                <p className="text-xs leading-relaxed text-navy/50">
+                  Preisträgerin &amp; Mentorin
+                  <br />
+                  Social Impact Award
+                </p>
+              </div>
             </div>
 
             <h2 className="mt-12 text-xs uppercase tracking-widest2 text-navy/40">

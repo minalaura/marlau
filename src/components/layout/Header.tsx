@@ -32,8 +32,8 @@ export function Header() {
       )}
     >
       <div className="container-content flex h-20 items-center justify-between">
-        <Link href="/" className="flex flex-col leading-none">
-          <span className="text-xl md:text-2xl font-serif tracking-wide text-navy">
+        <Link href="/" className="flex flex-col leading-none shrink-0">
+          <span className="text-xl md:text-2xl font-serif tracking-wide text-navy whitespace-nowrap">
             MARLAU
           </span>
           <span className="text-[0.6rem] uppercase tracking-widest2 text-sage mt-1">
@@ -41,13 +41,13 @@ export function Header() {
           </span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-9">
+        <nav className="hidden xl:flex items-center gap-5">
           {mainNav.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               className={clsx(
-                "text-sm tracking-wide text-navy/80 hover:text-navy transition-colors",
+                "text-sm tracking-wide text-navy/80 hover:text-navy transition-colors whitespace-nowrap",
                 pathname === item.href && "text-navy"
               )}
             >
@@ -56,10 +56,10 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden xl:block shrink-0">
           <Link
             href="/kontakt"
-            className="inline-flex items-center px-6 py-2.5 text-sm tracking-wide bg-navy text-ivory hover:bg-sea transition-colors duration-300 ease-quiet"
+            className="inline-flex items-center whitespace-nowrap px-6 py-2.5 text-sm tracking-wide bg-navy text-ivory hover:bg-sea transition-colors duration-300 ease-quiet"
           >
             Gespräch vereinbaren
           </Link>
@@ -67,7 +67,7 @@ export function Header() {
 
         <button
           type="button"
-          className="lg:hidden flex flex-col gap-1.5 p-2"
+          className="xl:hidden flex flex-col gap-1.5 p-2"
           aria-label={open ? "Menü schließen" : "Menü öffnen"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
@@ -88,7 +88,7 @@ export function Header() {
       </div>
 
       {open ? (
-        <nav className="lg:hidden border-t border-navy/10 bg-ivory">
+        <nav className="xl:hidden border-t border-navy/10 bg-ivory">
           <div className="container-content flex flex-col py-6 gap-5">
             {mainNav.map((item) => (
               <Link

@@ -69,8 +69,8 @@ export default function GruenderinPage() {
               </p>
               <p>
                 Sie wurde mit dem Social Impact Award ausgezeichnet und engagiert
-                sich seither als Mentorin für Gründerinnen und Gründer bei der
-                Entwicklung skalierbarer, wirkungsorientierter Geschäftsmodelle.
+                sich seither als Mentorin für Gründer bei der Entwicklung
+                skalierbarer, wirkungsorientierter Geschäftsmodelle.
               </p>
               <p>
                 Als Dozentin des Gesamtverbands der Personaldienstleister e.V. (GVP)
@@ -107,7 +107,9 @@ export default function GruenderinPage() {
                   className="h-9 w-auto"
                 />
                 <p className="text-xs leading-relaxed text-navy/50">
-                  Preisträgerin &amp; Mentorin
+                  <a href="/leistungen/purpose" className="underline hover:text-navy">
+                    Preisträgerin &amp; Mentorin
+                  </a>
                   <br />
                   Social Impact Award
                 </p>

@@ -64,6 +64,17 @@ export default function LeistungenPage() {
                     </p>
                   </>
                 ) : null}
+
+                {service.slug === "social-impact-non-profit-strategy" ? (
+                  <p className="mt-4 text-sm">
+                    <a
+                      href="/leistungen/purpose"
+                      className="underline text-navy hover:text-sea"
+                    >
+                      Mehr zur Purpose-Beratung
+                    </a>
+                  </p>
+                ) : null}
               </div>
 
               <ul className="grid gap-x-8 gap-y-3 sm:grid-cols-2">

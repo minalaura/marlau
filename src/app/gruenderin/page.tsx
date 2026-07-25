@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 export const metadata: Metadata = {
   title: "Gründerin",
   description:
-    "Marina Laura Schneider ist Unternehmensjuristin und strategische Beraterin. Sie begleitet Unternehmen und Führungskräfte an der Schnittstelle von Strategie, Governance, Organisation und Recht.",
+    "Marina Schneider ist Unternehmensjuristin und strategische Beraterin. Sie begleitet Unternehmen und Führungskräfte an der Schnittstelle von Strategie, Governance, Organisation und Recht.",
 };
 
 const competencies = [
@@ -31,7 +31,7 @@ export default function GruenderinPage() {
             <div className="relative aspect-[4/5] w-full overflow-hidden border border-navy/10">
               <Image
                 src="/2026_06_Profilbild.png"
-                alt="Marina Laura Schneider"
+                alt="Marina Schneider"
                 fill
                 priority
                 sizes="(min-width: 768px) 40vw, 90vw"
@@ -45,12 +45,12 @@ export default function GruenderinPage() {
               Founder &amp; Managing Advisor
             </p>
             <h1 className="text-3xl md:text-5xl font-serif font-medium leading-tight text-navy">
-              Marina Laura Schneider
+              Marina Schneider
             </h1>
 
             <div className="mt-8 space-y-5 text-base leading-relaxed text-navy/75">
               <p>
-                Marina Laura Schneider ist Unternehmensjuristin und strategische
+                Marina Schneider ist Unternehmensjuristin und strategische
                 Beraterin. Sie begleitet Unternehmen und Führungskräfte an der
                 Schnittstelle von Strategie, Governance, Organisation und Recht.
               </p>

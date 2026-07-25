@@ -10,7 +10,7 @@ export function FounderTeaser() {
           <div className="relative aspect-[4/5] w-full max-w-sm overflow-hidden border border-ivory/10">
             <Image
               src="/2026_06_Profilbild.png"
-              alt="Marina Laura Schneider"
+              alt="Marina Schneider"
               fill
               sizes="(min-width: 768px) 30vw, 90vw"
               className="object-cover"
@@ -22,10 +22,10 @@ export function FounderTeaser() {
               Beratung mit unternehmerischer Perspektive
             </p>
             <h2 className="text-3xl md:text-4xl font-serif font-medium leading-tight">
-              Marina Laura Schneider
+              Marina Schneider
             </h2>
             <p className="mt-6 max-w-lg text-base leading-relaxed text-ivory/70">
-              MARLAU wurde von Marina Laura Schneider gegründet. Als Unternehmensjuristin
+              MARLAU wurde von Marina Schneider gegründet. Als Unternehmensjuristin
               und strategische Beraterin verbindet sie rechtliche Präzision mit
               unternehmerischem Denken und Organisationsverständnis.
             </p>

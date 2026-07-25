@@ -184,6 +184,15 @@ export const events: Event[] = [
       "Restrukturierung, betriebsbedingte Kündigungen und die Vermeidung von Kündigungsschutzklagen – praxisnah anhand realer Fallbeispiele.",
     link: "https://personaldienstleister.de/seminar/krisenmanagement-in-schwierigen-zeiten-betriebsbedingte-kuendigungen-praxisnah-umsetzen-160926/",
   },
+  {
+    date: "2027-01-15",
+    title: "Netzwerktreffen Unternehmertum München",
+    organizer: "UnternehmerTUM, München",
+    format: "Vor Ort · 18:00 Uhr",
+    description:
+      "Austausch und Netzwerken rund um Unternehmertum. Die Location wird nach Anmeldung mitgeteilt.",
+    link: "/kontakt?anliegen=Ich%20m%C3%B6chte%20mich%20f%C3%BCr%20das%20Netzwerktreffen%20Unternehmertum%20M%C3%BCnchen%20am%2015.01.2027%20anmelden.",
+  },
 ];
 
 export const principles = [

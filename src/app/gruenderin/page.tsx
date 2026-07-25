@@ -81,7 +81,7 @@ export default function GruenderinPage() {
                 className="h-14 w-auto"
               />
               <p className="text-xs leading-relaxed text-navy/50">
-                Dozentin für Arbeitsrecht
+                Dozentin für Krisenmanagement
                 <br />
                 Gesamtverband der Personaldienstleister e.V.
               </p>

@@ -149,6 +149,26 @@ export default function GruenderinPage() {
               ))}
             </ul>
 
+            <h2 className="mt-12 text-xs uppercase tracking-widest2 text-navy/40">
+              Presse
+            </h2>
+            <div className="mt-5 border-t border-navy/10 pt-4">
+              <a
+                href="https://personaldienstleister.de/krisenmanagement-in-schwierigen-wirtschaftlichen-zeiten-marina-schneider-gibt-entscheidende-tipps-im-online-seminar-2/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
+              >
+                <p className="text-sm font-medium text-navy group-hover:text-sea transition-colors">
+                  GVP: Krisenmanagement in schwierigen wirtschaftlichen Zeiten –
+                  Marina Schneider gibt entscheidende Tipps im Online-Seminar
+                </p>
+                <p className="mt-1 text-xs text-navy/50">
+                  Interview, Gesamtverband der Personaldienstleister e.V. →
+                </p>
+              </a>
+            </div>
+
             <div className="mt-12">
               <Button href="/kontakt">Gespräch vereinbaren</Button>
             </div>

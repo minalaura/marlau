@@ -13,7 +13,7 @@ export const mainNav = [
   { label: "Über MARLAU", href: "/ueber-marlau" },
   { label: "Gründerin", href: "/gruenderin" },
   { label: "DSB", href: "/leistungen/datenschutzbeauftragter" },
-  { label: "Vorträge", href: "/gruenderin/vortraege" },
+  { label: "Events", href: "/gruenderin/vortraege" },
   { label: "Insights", href: "/insights" },
   { label: "Kontakt", href: "/kontakt" },
 ];

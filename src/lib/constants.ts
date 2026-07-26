@@ -195,12 +195,12 @@ export const events: Event[] = [
   },
   {
     date: "2027-02-20",
-    title: "Netzwerktreffen Mallorca",
+    title: "Netzwerktreffen Palma de Mallorca",
     organizer: "MARLAU Unternehmernetzwerk",
     format: "Vor Ort · 11:00 Uhr",
     description:
       "Austausch und Netzwerken unter Unternehmern. Die Location wird nach Anmeldung mitgeteilt.",
-    link: "/kontakt?anliegen=Ich%20m%C3%B6chte%20mich%20f%C3%BCr%20das%20Netzwerktreffen%20Mallorca%20am%2020.02.2027%20anmelden.",
+    link: "/kontakt?anliegen=Ich%20m%C3%B6chte%20mich%20f%C3%BCr%20das%20Netzwerktreffen%20Palma%20de%20Mallorca%20am%2020.02.2027%20anmelden.",
   },
 ];
 

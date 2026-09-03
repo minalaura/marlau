@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { events } from "@/lib/constants";
@@ -21,17 +22,30 @@ export default function VortraegePage() {
   return (
     <section className="pt-20 pb-24 md:pt-28 md:pb-32">
       <Container>
-        <p className="text-xs uppercase tracking-widest2 text-sage mb-4">
-          Gründerin
-        </p>
-        <h1 className="text-3xl md:text-5xl font-serif font-medium leading-tight text-navy max-w-2xl">
-          Vorträge &amp; Seminare
-        </h1>
-        <p className="mt-6 max-w-xl text-base leading-relaxed text-navy/70">
-          Marina Schneider referiert regelmäßig zu arbeitsrechtlichen,
-          strategischen und unternehmerischen Themen – für Verbände,
-          Unternehmen und Netzwerke.
-        </p>
+        <div className="grid gap-10 md:grid-cols-[1.3fr_0.7fr] md:items-center">
+          <div>
+            <p className="text-xs uppercase tracking-widest2 text-sage mb-4">
+              Gründerin
+            </p>
+            <h1 className="text-3xl md:text-5xl font-serif font-medium leading-tight text-navy max-w-2xl">
+              Vorträge &amp; Seminare
+            </h1>
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-navy/70">
+              Marina Schneider referiert regelmäßig zu arbeitsrechtlichen,
+              strategischen und unternehmerischen Themen – für Verbände,
+              Unternehmen und Netzwerke.
+            </p>
+          </div>
+          <div className="relative aspect-[4/5] w-full max-w-xs overflow-hidden justify-self-center md:justify-self-end">
+            <Image
+              src="/marina-portrait-close.png"
+              alt="Marina Schneider"
+              fill
+              sizes="(min-width: 768px) 25vw, 60vw"
+              className="object-cover"
+            />
+          </div>
+        </div>
 
         <div className="mt-16 divide-y divide-navy/10 border-t border-navy/10">
           {events.map((event) => {

@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/Button";
 export const metadata: Metadata = {
   title: "Gründerin",
   description:
-    "Marina Schneider ist Unternehmensjuristin und strategische Beraterin. Sie begleitet Unternehmen und Führungskräfte an der Schnittstelle von Strategie, Governance, Organisation und Recht.",
+    "Marina Schneider verbindet juristische Präzision mit unternehmerischem Denken, Kommunikationsstärke und Führungserfahrung an der Schnittstelle von Recht, Organisation und Geschäftsentwicklung.",
 };
 
 const competencies = [
@@ -20,6 +20,8 @@ const competencies = [
   "Compliance",
   "Datenschutz",
   "Transformation",
+  "Verhandlung",
+  "Stakeholder-Management",
   "Social Impact Strategy",
   "Aufbau und Professionalisierung interner Funktionen",
 ];
@@ -52,9 +54,11 @@ export default function GruenderinPage() {
 
             <div className="mt-8 space-y-5 text-base leading-relaxed text-navy/75">
               <p>
-                Marina Schneider ist Unternehmensjuristin und strategische
-                Beraterin. Sie begleitet Unternehmen und Führungskräfte an der
-                Schnittstelle von Strategie, Governance, Organisation und Recht.
+                Marina Schneider verbindet juristische Präzision mit
+                unternehmerischem Denken, Kommunikationsstärke und
+                Führungserfahrung. Ihr Profil reicht über die klassische Rolle
+                der Unternehmensjuristin hinaus – an die Schnittstelle von
+                Recht, Organisation, Kommunikation und Geschäftsentwicklung.
               </p>
               <p>
                 Ihre Erfahrung umfasst die Beratung von Geschäftsführungen, den Aufbau

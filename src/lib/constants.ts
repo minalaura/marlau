@@ -237,8 +237,59 @@ export const mandateFormats = [
   "Projektberatung",
   "Advisory Retainer",
   "Interim-Unterstützung",
+  "Fractional Legal & Compliance",
   "Organisationsanalyse",
   "Governance Review",
   "Strategie- und Umsetzungsroadmap",
   "Begleitung einzelner Entscheidungsprozesse",
+];
+
+export type AuditPackage = {
+  slug: string;
+  title: string;
+  focus: string;
+  description: string;
+  bullets: string[];
+};
+
+export const auditPackages: AuditPackage[] = [
+  {
+    slug: "legal-compliance-audit",
+    title: "Legal & Compliance Audit",
+    focus: "Verträge, Datenschutz, arbeitsrechtliche Risiken",
+    description:
+      "Eine strukturierte Bestandsaufnahme der rechtlichen und regulatorischen Risiken eines Unternehmens – als Grundlage für priorisierte nächste Schritte.",
+    bullets: [
+      "Sichtung zentraler Verträge und Vertragsmuster",
+      "Einordnung datenschutzrechtlicher Risiken",
+      "Arbeitsrechtliche Risikofelder (Kündigungen, Verträge, Dokumentation)",
+      "Priorisierter Maßnahmenplan",
+    ],
+  },
+  {
+    slug: "governance-audit",
+    title: "Governance Audit",
+    focus: "Entscheidungsstrukturen, Verantwortlichkeiten, Gremien",
+    description:
+      "Eine Einordnung, wie Entscheidungen im Unternehmen tatsächlich getroffen werden – und wo Verantwortlichkeiten unklar oder Gremien nicht handlungsfähig sind.",
+    bullets: [
+      "Analyse bestehender Entscheidungswege",
+      "Prüfung von Gremien- und Beschlussstrukturen",
+      "Klärung von Verantwortlichkeiten auf Führungsebene",
+      "Priorisierter Maßnahmenplan",
+    ],
+  },
+  {
+    slug: "organisations-audit",
+    title: "Organisations Audit",
+    focus: "Rollen, Prozesse, Skalierbarkeit",
+    description:
+      "Eine Einordnung, ob die bestehende Organisation zur aktuellen und geplanten Größe des Unternehmens passt.",
+    bullets: [
+      "Prüfung von Rollen- und Verantwortungsschnitten",
+      "Analyse zentraler Prozesse und Schnittstellen",
+      "Einordnung der Skalierbarkeit bestehender Strukturen",
+      "Priorisierter Maßnahmenplan",
+    ],
+  },
 ];

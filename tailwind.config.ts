@@ -8,8 +8,8 @@ const config: Config = {
         navy: "#0F1418",
         ivory: "#F7F6F2",
         stone: "#DAD5C8",
-        sage: "#116B5A",
-        sea: "#0A423C",
+        sage: "#A6813A",
+        sea: "#7C5F29",
         charcoal: "#1A1E21",
       },
       fontFamily: {

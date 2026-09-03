@@ -5,12 +5,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: "#14202B",
-        ivory: "#F5F2EA",
-        stone: "#D8D2C7",
-        sage: "#7E8C80",
-        sea: "#284B4C",
-        charcoal: "#24282B",
+        navy: "#0F1418",
+        ivory: "#F7F6F2",
+        stone: "#DAD5C8",
+        sage: "#116B5A",
+        sea: "#0A423C",
+        charcoal: "#1A1E21",
       },
       fontFamily: {
         serif: ["var(--font-serif)", "Georgia", "serif"],

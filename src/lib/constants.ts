@@ -1,7 +1,7 @@
 export const site = {
   name: "MARLAU",
   descriptor: "Advisory",
-  claim: "Clarity for complex decisions.",
+  claim: "Clarity for growth, innovation and complex decisions.",
   url: "https://www.marlau-advisory.com",
   email: "kontakt@marlau-advisory.com",
   locale: "de-DE",
@@ -28,115 +28,73 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: "executive-advisory",
-    title: "Executive Advisory",
+    slug: "strategic-sparring",
+    title: "Strategic Sparring",
     shortSummary:
-      "Vertrauliches Sparring für Unternehmer, Geschäftsführungen und Führungskräfte bei komplexen Entscheidungen, Veränderungssituationen und strategischen Weichenstellungen.",
+      "Vertraulicher Sparringspartner für Unternehmer und Geschäftsführungen bei schwierigen Entscheidungen, neuen Ideen und strategischen Optionen.",
     intro:
-      "MARLAU bietet Geschäftsführungen und Unternehmern einen unabhängigen, vertraulichen Blick von außen. Im Mittelpunkt stehen nicht vorgefertigte Methoden, sondern die konkrete Entscheidungssituation und ihre strategischen, organisatorischen und rechtlichen Auswirkungen.",
+      "Nicht jede Entscheidung braucht ein Beratungsprojekt. Manchmal braucht es einfach einen starken Sparringspartner. MARLAU bietet Unternehmern und Geschäftsführungen einen unabhängigen, vertraulichen Blick von außen – ohne vorgefertigte Methoden, dafür mit Fokus auf die konkrete Situation.",
     bullets: [
-      "Vertrauliches Sparring für Geschäftsführungen",
-      "Vorbereitung strategischer Entscheidungen",
-      "Einordnung komplexer Interessenlagen",
-      "Begleitung in Veränderungs- und Krisensituationen",
-      "Vorbereitung von Beirats-, Aufsichtsrats- oder Gesellschafterentscheidungen",
-      "Strategische Zweitmeinung",
-      "Unterstützung bei Konflikten auf Führungs- oder Gesellschafterebene",
-      "Temporäre strategische Begleitung",
-    ],
-  },
-  {
-    slug: "strategy-growth",
-    title: "Strategy & Growth",
-    shortSummary:
-      "Entwicklung und Schärfung von Strategien, Geschäftsmodellen, Wachstumsfeldern und organisatorischen Voraussetzungen für nachhaltige Entwicklung.",
-    intro:
-      "Strategie bedeutet, bewusste Entscheidungen über Prioritäten, Ressourcen und zukünftige Positionierung zu treffen. MARLAU unterstützt bei der Entwicklung klarer strategischer Leitlinien und bei deren Übersetzung in konkrete Verantwortlichkeiten und Maßnahmen.",
-    bullets: [
-      "Unternehmens- und Bereichsstrategien",
-      "Wachstumsstrategien",
-      "Geschäftsmodellentwicklung",
+      "Schwierige Entscheidungen",
+      "Neue Ideen",
+      "Strategische Optionen",
+      "Wachstum",
+      "Priorisierung",
+      "Geschäftsmodelle",
       "Positionierung",
-      "Markt- und Wettbewerbsbetrachtung",
-      "Priorisierung strategischer Initiativen",
-      "Aufbau neuer Geschäftsfelder",
-      "Skalierungsstrukturen",
-      "Strategie-Roadmaps",
+      "Herausforderungen im Tagesgeschäft",
     ],
   },
   {
-    slug: "organisation-transformation",
-    title: "Organisation & Transformation",
+    slug: "growth-business-development",
+    title: "Growth & Business Development",
     shortSummary:
-      "Gestaltung von Strukturen, Verantwortlichkeiten, Entscheidungswegen und Veränderungsprozessen.",
+      "Wie wird aus einer guten Idee tatsächlich Geschäft? Unterstützung bei neuen Geschäftsfeldern, Wachstumsideen und Marktchancen.",
     intro:
-      "Organisationen wachsen häufig schneller als ihre Strukturen. MARLAU hilft, Verantwortlichkeiten, Entscheidungswege und Zusammenarbeit so zu gestalten, dass Strategie tatsächlich umgesetzt werden kann.",
+      "Growth & Business Development ist keine klassische Strategieplanung. Im Mittelpunkt steht die Frage, wie aus einer guten Idee tatsächlich Geschäft wird – mit Blick auf Markt, Angebot und konkrete nächste Schritte.",
     bullets: [
-      "Organisationsdesign",
-      "Rollen- und Verantwortlichkeitsmodelle",
-      "Entscheidungsstrukturen",
-      "Reorganisation",
-      "Change-Architektur",
-      "Prozess- und Governance-Strukturen",
-      "Schnittstellenklärung",
-      "Aufbau neuer Funktionen oder Bereiche",
-      "Begleitung von Wachstum und Professionalisierung",
+      "Neue Geschäftsfelder",
+      "Wachstumsideen",
+      "Marktchancen",
+      "Partnerschaften",
+      "Positionierung",
+      "Angebote",
+      "Geschäftsmodelle",
+      "Skalierung",
+      "Neue Kunden- oder Marktsegmente",
     ],
   },
   {
-    slug: "governance-legal-strategy",
-    title: "Governance & Legal Strategy",
+    slug: "innovation-new-business",
+    title: "Innovation & New Business",
     shortSummary:
-      "Verbindung von Unternehmensstrategie, Governance, Compliance und rechtlichen Rahmenbedingungen.",
+      "Innovation im Mittelstand: Ideen strukturieren, Marktchancen erkennen und Umsetzung vorbereiten.",
     intro:
-      "MARLAU berücksichtigt rechtliche und regulatorische Rahmenbedingungen als Bestandteil strategischer und organisatorischer Beratung. Soweit eine eigenständige Rechtsberatung erforderlich ist, erfolgt diese nur im rechtlich zulässigen Rahmen oder in Zusammenarbeit mit entsprechend zugelassenen Partnern.",
+      "MARLAU ist keine technische Innovationsberatung. Die Stärke liegt darin, Ideen zu strukturieren, Marktchancen realistisch einzuschätzen, den Business Case zu hinterfragen, Stakeholder zu überzeugen und die Umsetzung vorzubereiten.",
     bullets: [
-      "Corporate Governance",
-      "Compliance-Strukturen",
-      "Strategisches Legal Management",
-      "Vertrags- und Risikostrategien",
-      "Governance bei Wachstum und Internationalisierung",
-      "Schnittstelle zwischen Geschäftsführung, Legal, HR und Operations",
-      "Rechtliche Einordnung strategischer Optionen",
-      "Aufbau interner Legal- oder Compliance-Funktionen",
-      "Begleitung sensibler Unternehmensentscheidungen",
+      "Neue Geschäftsmodelle",
+      "Neue Services",
+      "Digitalisierung",
+      "KI-gestützte Geschäftsmodelle",
+      "Neue Märkte",
+      "Neue Kooperationen",
+      "Weiterentwicklung bestehender Angebote",
+      "Bewertung und Strukturierung neuer Ideen",
     ],
   },
   {
-    slug: "people-leadership",
-    title: "People & Leadership",
+    slug: "legal-compliance-sparring",
+    title: "Legal & Compliance Sparring",
     shortSummary:
-      "Beratung zu Führungsstrukturen, Rollen, Verantwortlichkeiten, People Strategy und strategischen HR-Fragestellungen.",
+      "Rechtliche Erfahrung als Teil unternehmerischer Entscheidungen – nicht als klassische Rechtsberatung.",
     intro:
-      "People-Themen sind häufig zugleich Strategie-, Governance- und Organisationsfragen. MARLAU unterstützt Unternehmen dabei, Führungs- und Personalstrukturen an ihrer strategischen Entwicklung auszurichten.",
+      "Rechtliche Erfahrung hilft dabei, unternehmerische Entscheidungen realistisch und verantwortungsvoll zu treffen. MARLAU bringt die rechtliche Perspektive als Teil der Entscheidung ein – nicht als eigenständige Rechtsberatung. Soweit eine eigenständige Rechtsberatung erforderlich ist, erfolgt diese nur im rechtlich zulässigen Rahmen oder in Zusammenarbeit mit entsprechend zugelassenen Partnern.",
     bullets: [
-      "People Strategy",
-      "Führungsmodelle",
-      "HR-Governance",
-      "Strategische Personalfragen",
-      "Rollen und Verantwortlichkeiten",
-      "Führung in Veränderungssituationen",
-      "Aufbau von HR-Strukturen",
-      "Arbeitsrechtlich geprägte Organisationsfragen",
-      "Zusammenarbeit zwischen Geschäftsführung, HR und Legal",
-    ],
-  },
-  {
-    slug: "social-impact-non-profit-strategy",
-    title: "Social Impact & Non-Profit Strategy",
-    shortSummary:
-      "Strategische Beratung für soziale Unternehmen, gemeinnützige Organisationen und wirkungsorientierte Geschäftsmodelle.",
-    intro:
-      "MARLAU begleitet soziale Unternehmen und gemeinnützige Organisationen bei der Verbindung von Wirkung, wirtschaftlicher Tragfähigkeit und professioneller Governance.",
-    bullets: [
-      "Geschäftsmodellentwicklung",
-      "Skalierungsstrategien",
-      "Governance",
-      "Wirkungslogik",
-      "Organisationsentwicklung",
-      "Finanzierung und Partnerschaften",
-      "Professionalisierung gemeinnütziger Strukturen",
-      "Sparring für Social Entrepreneurs",
+      "Vertragsfragen",
+      "Datenschutz",
+      "Compliance",
+      "Arbeitsrechtliche Fragestellungen",
+      "Rechtliche Risiken bei neuen Geschäftsmodellen",
     ],
   },
 ];
@@ -144,23 +102,28 @@ export const services: Service[] = [
 export const approachSteps = [
   {
     number: "01",
-    title: "Verstehen",
-    text: "Kontext, Ziele, Interessen und Risiken erfassen.",
+    title: "Zuhören",
+    text: "Die Situation, Ziele und Herausforderungen verstehen.",
   },
   {
     number: "02",
-    title: "Strukturieren",
-    text: "Komplexität reduzieren und Entscheidungsfelder klar abgrenzen.",
+    title: "Hinterfragen",
+    text: "Annahmen prüfen, neue Perspektiven einbringen und blinde Flecken sichtbar machen.",
   },
   {
     number: "03",
-    title: "Entscheiden",
-    text: "Optionen bewerten und tragfähige Empfehlungen entwickeln.",
+    title: "Entwickeln",
+    text: "Optionen und konkrete Lösungen gemeinsam erarbeiten.",
   },
   {
     number: "04",
+    title: "Entscheiden",
+    text: "Prioritäten schaffen und Entscheidungen vorbereiten.",
+  },
+  {
+    number: "05",
     title: "Umsetzen",
-    text: "Verantwortlichkeiten, Prozesse und nächste Schritte konkretisieren.",
+    text: "Aus Ideen konkrete nächste Schritte machen.",
   },
 ];
 
@@ -238,10 +201,19 @@ export const mandateFormats = [
   "Advisory Retainer",
   "Interim-Unterstützung",
   "Fractional Legal & Compliance",
-  "Organisationsanalyse",
-  "Governance Review",
+  "Growth Sprint",
+  "Innovation Workshop",
   "Strategie- und Umsetzungsroadmap",
   "Begleitung einzelner Entscheidungsprozesse",
+];
+
+export const mittelstandQuestions = [
+  "Wo liegen neue Wachstumschancen?",
+  "Welche Idee lohnt sich wirklich?",
+  "Wie kann ein neues Angebot entwickelt werden?",
+  "Welche Partnerschaften könnten sinnvoll sein?",
+  "Wie kann Innovation neben dem Tagesgeschäft funktionieren?",
+  "Wie lässt sich eine Idee intern durchsetzen?",
 ];
 
 export type AuditPackage = {

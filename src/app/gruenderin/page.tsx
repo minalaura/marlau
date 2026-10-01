@@ -7,23 +7,21 @@ import { Button } from "@/components/ui/Button";
 export const metadata: Metadata = {
   title: "Gründerin",
   description:
-    "Marina Schneider verbindet juristische Präzision mit unternehmerischem Denken, Kommunikationsstärke und Führungserfahrung an der Schnittstelle von Recht, Organisation und Geschäftsentwicklung.",
+    "Marina Schneider ist Unternehmensjuristin, Beraterin und Unternehmerin. Ihre Stärke liegt darin, komplexe Situationen schnell zu erfassen und gemeinsam mit Entscheidern pragmatische Lösungen zu entwickeln.",
 };
 
 const competencies = [
-  "Unternehmensstrategie",
-  "Executive Advisory",
-  "Organisationsentwicklung",
-  "Corporate Governance",
-  "Legal Strategy",
-  "Arbeitsrecht und People Governance",
-  "Compliance",
-  "Datenschutz",
-  "Transformation",
+  "Unternehmerisches Denken",
+  "Strategic Sparring",
+  "Growth & Business Development",
+  "Innovation & New Business",
+  "Entscheidungsfindung",
   "Verhandlung",
   "Stakeholder-Management",
+  "Legal & Compliance",
+  "Arbeitsrecht",
+  "Datenschutz",
   "Social Impact Strategy",
-  "Aufbau und Professionalisierung interner Funktionen",
 ];
 
 export default function GruenderinPage() {
@@ -46,7 +44,7 @@ export default function GruenderinPage() {
 
           <div>
             <p className="text-xs uppercase tracking-widest2 text-sage mb-4">
-              Founder &amp; Managing Advisor
+              Founder &amp; Strategic Sparring Partner
             </p>
             <h1 className="text-3xl md:text-5xl font-serif font-medium leading-tight text-navy">
               Marina Schneider
@@ -54,23 +52,20 @@ export default function GruenderinPage() {
 
             <div className="mt-8 space-y-5 text-base leading-relaxed text-navy/75">
               <p>
-                Marina Schneider verbindet juristische Präzision mit
-                unternehmerischem Denken, Kommunikationsstärke und
-                Führungserfahrung. Ihr Profil reicht über die klassische Rolle
-                der Unternehmensjuristin hinaus – an die Schnittstelle von
-                Recht, Organisation, Kommunikation und Geschäftsentwicklung.
+                Marina Schneider ist Unternehmensjuristin, Beraterin und
+                Unternehmerin. Ihre Stärke liegt darin, komplexe Situationen
+                schnell zu erfassen, neue Perspektiven einzubringen und gemeinsam
+                mit Entscheidern pragmatische Lösungen zu entwickeln.
               </p>
               <p>
-                Ihre Erfahrung umfasst die Beratung von Geschäftsführungen, den Aufbau
-                und die Leitung rechtlicher und organisatorischer Funktionen sowie die
-                Begleitung anspruchsvoller Veränderungs-, Wachstums- und
-                Governance-Fragestellungen.
+                Sie arbeitet besonders gerne mit Unternehmern, Start-ups und
+                mittelständischen Unternehmen, die wachsen, Neues ausprobieren
+                oder schwierige Entscheidungen treffen müssen.
               </p>
               <p>
-                Ihr Beratungsansatz verbindet analytische Klarheit mit unternehmerischer
-                Umsetzbarkeit. Im Mittelpunkt steht die Frage, welche Entscheidung für
-                das Unternehmen nicht nur fachlich richtig, sondern auch organisatorisch
-                tragfähig ist.
+                Ihr Hintergrund in Legal, Compliance und Unternehmensberatung
+                ermöglicht ihr, wirtschaftliche Chancen ebenso im Blick zu
+                behalten wie Risiken und praktische Umsetzbarkeit.
               </p>
               <p>
                 Sie wurde mit dem Social Impact Award ausgezeichnet und engagiert

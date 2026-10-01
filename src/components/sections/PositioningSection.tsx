@@ -1,39 +1,22 @@
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
-const columns = [
-  {
-    title: "Klarheit",
-    text: "Komplexe Situationen werden strukturiert, priorisiert und auf die entscheidenden Fragen reduziert.",
-  },
-  {
-    title: "Richtung",
-    text: "Aus unterschiedlichen Interessen, Risiken und Möglichkeiten entsteht eine belastbare Entscheidungsgrundlage.",
-  },
-  {
-    title: "Umsetzung",
-    text: "Strategische Empfehlungen werden in konkrete Governance-, Organisations- und Umsetzungsstrukturen übersetzt.",
-  },
-];
-
 export function PositioningSection() {
   return (
     <section className="py-24 md:py-32">
-      <Container>
+      <Container className="max-w-3xl">
         <SectionHeading
-          title="Strategie endet nicht mit einer Empfehlung."
-          text="Gute Entscheidungen müssen strategisch sinnvoll, rechtlich belastbar und organisatorisch umsetzbar sein. MARLAU verbindet diese Perspektiven und begleitet Unternehmen von der Einordnung komplexer Fragestellungen bis zur konkreten Umsetzung."
+          title="Gute Ideen brauchen Klarheit."
+          text="Unternehmerische Entscheidungen entstehen selten nach Lehrbuch. Wachstum, Innovation und Veränderung bringen Chancen, Unsicherheit und unterschiedliche Interessen zusammen."
         />
-
-        <div className="mt-16 grid gap-12 md:grid-cols-3 md:gap-8">
-          {columns.map((col, i) => (
-            <div key={col.title} className="border-t border-navy/15 pt-6">
-              <span className="text-xs text-sage tracking-widest2">0{i + 1}</span>
-              <h3 className="mt-3 text-xl font-serif text-navy">{col.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-navy/70">{col.text}</p>
-            </div>
-          ))}
-        </div>
+        <p className="mt-6 text-base leading-relaxed text-navy/70">
+          MARLAU hilft dabei, Situationen zu strukturieren, neue Perspektiven zu
+          entwickeln und aus Ideen konkrete nächste Schritte zu machen.
+        </p>
+        <p className="mt-6 text-base leading-relaxed text-navy/70">
+          Keine Standardlösungen. Keine unnötige Theorie. Sondern unabhängiges
+          Sparring, unternehmerisches Denken und pragmatische Umsetzung.
+        </p>
       </Container>
     </section>
   );

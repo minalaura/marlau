@@ -33,7 +33,7 @@ export default function PurposePage() {
       <section className="pt-20 pb-16 md:pt-28 md:pb-20">
         <Container className="max-w-3xl">
           <p className="text-xs uppercase tracking-widest2 text-sage mb-4">
-            Social Impact &amp; Purpose
+            Growth &amp; Business Development
           </p>
           <h1 className="text-3xl md:text-5xl font-serif font-medium leading-tight text-navy">
             Purpose, der trägt.

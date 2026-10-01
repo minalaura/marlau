@@ -2,6 +2,7 @@ import { Hero } from "@/components/sections/Hero";
 import { TrustSection } from "@/components/sections/TrustSection";
 import { PositioningSection } from "@/components/sections/PositioningSection";
 import { ServicesOverview } from "@/components/sections/ServicesOverview";
+import { MittelstandSection } from "@/components/sections/MittelstandSection";
 import { ApproachTeaser } from "@/components/sections/ApproachTeaser";
 import { FounderTeaser } from "@/components/sections/FounderTeaser";
 import { ClarityCheckTeaser } from "@/components/sections/ClarityCheckTeaser";
@@ -15,6 +16,7 @@ export default function HomePage() {
       <TrustSection />
       <PositioningSection />
       <ServicesOverview />
+      <MittelstandSection />
       <ApproachTeaser />
       <FounderTeaser />
       <ClarityCheckTeaser />

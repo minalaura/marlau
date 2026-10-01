@@ -13,8 +13,9 @@ export function Footer() {
               Advisory
             </p>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-ivory/60">
-              Unabhängige Beratung an der Schnittstelle von Strategie, Organisation,
-              Governance und Recht.
+              Unabhängiger Sparringspartner für Unternehmer, Start-ups und
+              mittelständische Unternehmen bei Wachstum, Innovation und
+              strategischen Entscheidungen.
             </p>
           </div>
 
@@ -64,7 +65,7 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col md:flex-row md:items-center md:justify-between gap-4 border-t border-ivory/10 pt-6 text-xs text-ivory/40">
           <p>&copy; {new Date().getFullYear()} MARLAU. Alle Rechte vorbehalten.</p>
-          <p>Independent Advisory.</p>
+          <p>Independent thinking for ambitious businesses.</p>
         </div>
       </Container>
     </footer>

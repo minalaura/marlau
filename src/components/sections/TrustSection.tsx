@@ -1,12 +1,11 @@
 import { Container } from "@/components/ui/Container";
 
 const fields = [
-  "Executive Advisory",
-  "Strategy",
-  "Governance",
-  "Organisation",
+  "Strategic Sparring",
   "Growth",
-  "Transformation",
+  "Innovation",
+  "Business Development",
+  "Legal & Compliance",
 ];
 
 export function TrustSection() {
@@ -16,11 +15,11 @@ export function TrustSection() {
         <div className="grid gap-8 md:grid-cols-[1fr_1.4fr] md:items-center">
           <div>
             <p className="text-xs uppercase tracking-widest2 text-sage mb-2">
-              Beratung auf Entscheidungsebene
+              Sparring auf Entscheidungsebene
             </p>
             <p className="text-lg leading-relaxed text-navy/80">
-              MARLAU unterstützt dort, wo strategische Entscheidungen, organisatorische
-              Veränderungen und rechtliche Rahmenbedingungen zusammenkommen.
+              MARLAU unterstützt Unternehmer und Geschäftsführungen dort, wo
+              Wachstum, Innovation und schwierige Entscheidungen zusammenkommen.
             </p>
           </div>
 

@@ -8,18 +8,18 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "MARLAU Advisory | Strategy, Governance & Organisational Development",
+    default: "MARLAU Advisory | Strategic Sparring for Growth & Innovation",
     template: "%s | MARLAU Advisory",
   },
   description:
-    "MARLAU berät Unternehmer, Geschäftsführungen und Führungskräfte bei strategischen, organisatorischen und regulatorischen Fragestellungen. Independent Advisory für komplexe Entscheidungen.",
+    "MARLAU begleitet Unternehmer, Start-ups und mittelständische Unternehmen als unabhängiger Sparringspartner bei Wachstum, Innovation und strategischen Entscheidungen.",
   openGraph: {
     type: "website",
     locale: "de_DE",
     siteName: "MARLAU Advisory",
-    title: "MARLAU Advisory | Clarity for complex decisions.",
+    title: "MARLAU Advisory | Clarity for growth, innovation and complex decisions.",
     description:
-      "Unabhängige Beratung an der Schnittstelle von Strategie, Organisation, Governance und Recht.",
+      "Unabhängiger Sparringspartner für Unternehmer, Start-ups und mittelständische Unternehmen bei Wachstum, Innovation und strategischen Entscheidungen.",
   },
   twitter: {
     card: "summary_large_image",
@@ -37,9 +37,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     name: "MARLAU",
     alternateName: "MARLAU Advisory",
     description:
-      "Unabhängige Boutique-Beratung für Strategie, Governance und Organisationsentwicklung.",
+      "Unabhängiger strategischer Sparringspartner für Unternehmer, Start-ups und mittelständische Unternehmen bei Wachstum, Innovation und komplexen Entscheidungen.",
     url: site.url,
-    slogan: "Clarity for complex decisions.",
+    slogan: site.claim,
   };
 
   return (

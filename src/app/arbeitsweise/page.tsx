@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { principles, mandateFormats } from "@/lib/constants";
+import { principles, mandateFormats, approachSteps } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Arbeitsweise",
@@ -22,6 +22,24 @@ export default function ArbeitsweisePage() {
             MARLAU arbeitet nicht mit starren Beratungsprodukten. Ausgangspunkt ist immer
             die konkrete unternehmerische Situation.
           </p>
+        </Container>
+      </section>
+
+      <section className="py-20 md:py-24">
+        <Container>
+          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
+            {approachSteps.map((step) => (
+              <div key={step.number} className="border-t border-navy/15 pt-6">
+                <span className="text-xs text-sage tracking-widest2">
+                  {step.number}
+                </span>
+                <h3 className="mt-2 text-lg font-serif text-navy">{step.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-navy/70">
+                  {step.text}
+                </p>
+              </div>
+            ))}
+          </div>
         </Container>
       </section>
 

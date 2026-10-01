@@ -10,24 +10,23 @@ export function Hero() {
             MARLAU &mdash; Advisory
           </p>
           <h1 className="text-4xl md:text-6xl font-serif font-medium leading-[1.08] text-navy">
-            Clarity for complex decisions.
+            Clarity for growth, innovation and complex decisions.
           </h1>
           <p className="mt-8 max-w-xl text-base md:text-lg leading-relaxed text-navy/70">
-            MARLAU berät Unternehmer, Geschäftsführungen und Führungskräfte bei
-            strategischen, organisatorischen und regulatorischen Fragestellungen. Wir
-            verbinden unternehmerisches Denken mit fundierter Governance-, Organisations-
-            und Rechtsexpertise.
+            MARLAU begleitet Unternehmer, Start-ups und mittelständische Unternehmen
+            als unabhängiger Sparringspartner bei Wachstum, Innovation und
+            strategischen Entscheidungen.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <Button href="/kontakt">Gespräch vereinbaren</Button>
-            <Button href="/leistungen" variant="secondary">
-              Leistungen entdecken
+            <Button href="#wie-marlau-unterstuetzt" variant="secondary">
+              Wie MARLAU unterstützt
             </Button>
           </div>
 
           <p className="mt-8 text-sm text-navy/50 italic font-serif">
-            Independent advice for leaders and organisations.
+            Independent thinking for ambitious businesses.
           </p>
         </div>
       </Container>

@@ -23,7 +23,7 @@ export default function DatenschutzbeauftragterPage() {
       <section className="pt-20 pb-16 md:pt-28 md:pb-20">
         <Container className="max-w-3xl">
           <p className="text-xs uppercase tracking-widest2 text-sage mb-4">
-            Governance &amp; Legal Strategy
+            Legal &amp; Compliance Sparring
           </p>
           <h1 className="text-3xl md:text-5xl font-serif font-medium leading-tight text-navy">
             Externe Datenschutzbeauftragte

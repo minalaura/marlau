@@ -114,7 +114,7 @@ export const quizTiers: QuizTier[] = [
     title: "Bauchgefühl-Modus",
     text: "Entscheidungen fallen schnell und mutig – aber meist im Kopf einer einzigen Person. Das funktioniert, solange nichts dazwischenkommt. Der Haken: Irgendwann kommt immer etwas dazwischen.",
     recommendation:
-      "Ein guter Startpunkt wäre Executive Advisory: ein unabhängiger Blick von außen, bevor aus Bauchgefühl ein Risiko wird.",
+      "Ein guter Startpunkt wäre Strategic Sparring: ein unabhängiger Blick von außen, bevor aus Bauchgefühl ein Risiko wird.",
   },
   {
     min: 7,
@@ -122,15 +122,15 @@ export const quizTiers: QuizTier[] = [
     title: "Baustelle mit Potenzial",
     text: "Es gibt Ansätze von Struktur, aber vieles läuft über Zuruf statt über klare Verantwortlichkeiten. Das trägt eine Weile – bis das Unternehmen schneller wächst als seine Organisation.",
     recommendation:
-      "Hier lohnt ein Blick auf Organisation & Transformation: Strukturen, die mit dem Unternehmen mitwachsen, statt hinterherzuhinken.",
+      "Hier lohnt ein Blick auf Growth & Business Development: Wachstum, das mitgedacht statt nachträglich sortiert wird.",
   },
   {
     min: 14,
     max: 19,
     title: "Fast durchdacht",
-    text: "Die wesentlichen Fragen sind beantwortet, die Richtung stimmt. Was fehlt, sind meist einzelne blinde Flecken – oft genau dort, wo Strategie, Governance und Recht aufeinandertreffen.",
+    text: "Die wesentlichen Fragen sind beantwortet, die Richtung stimmt. Was fehlt, sind meist einzelne blinde Flecken – oft genau dort, wo Strategie, Recht und Markt aufeinandertreffen.",
     recommendation:
-      "Eine strategische Zweitmeinung im Rahmen von Executive Advisory hilft, die letzten Lücken zu schließen, bevor sie teuer werden.",
+      "Eine strategische Zweitmeinung im Rahmen von Strategic Sparring hilft, die letzten Lücken zu schließen, bevor sie teuer werden.",
   },
   {
     min: 20,
@@ -138,7 +138,7 @@ export const quizTiers: QuizTier[] = [
     title: "Bemerkenswert klar",
     text: "Verantwortlichkeiten sind geklärt, Entscheidungen sind durchdacht, das Unternehmen würde auch ohne Sie einen guten Tag haben. Das ist selten – und eine gute Ausgangslage für den nächsten großen Schritt.",
     recommendation:
-      "An dieser Stelle wird es interessant: Strategy & Growth, um aus einer klaren Basis das nächste Wachstumsfeld zu erschließen.",
+      "An dieser Stelle wird es interessant: Innovation & New Business, um aus einer klaren Basis das nächste Wachstumsfeld zu erschließen.",
   },
 ];
 

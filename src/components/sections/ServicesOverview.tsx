@@ -6,13 +6,13 @@ import { services } from "@/lib/constants";
 
 export function ServicesOverview() {
   return (
-    <section className="bg-stone/15 py-24 md:py-32">
+    <section id="wie-marlau-unterstuetzt" className="scroll-mt-24 bg-stone/15 py-24 md:py-32">
       <Container>
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-          <SectionHeading eyebrow="Beratungsfelder" title="Unsere Beratungsfelder" />
+          <SectionHeading eyebrow="Expertise" title="Wie MARLAU unterstützt" />
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
           {services.map((service) => (
             <ServiceCard key={service.slug} service={service} />
           ))}

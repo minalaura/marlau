@@ -19,19 +19,21 @@ export function FounderTeaser() {
 
           <div>
             <p className="text-xs uppercase tracking-widest2 text-sage mb-4">
-              Beratung mit unternehmerischer Perspektive
+              Strategischer Sparringspartner
             </p>
             <h2 className="text-3xl md:text-4xl font-serif font-medium leading-tight">
               Marina Schneider
             </h2>
             <p className="mt-6 max-w-lg text-base leading-relaxed text-ivory/70">
-              MARLAU wurde von Marina Schneider gegründet. Als Unternehmensjuristin
-              und strategische Beraterin verbindet sie rechtliche Präzision mit
-              unternehmerischem Denken und Organisationsverständnis.
+              MARLAU wurde von Marina Schneider gegründet – Unternehmensjuristin,
+              Beraterin und Unternehmerin. Ihre Stärke liegt darin, komplexe
+              Situationen schnell zu erfassen und gemeinsam mit Entscheidern
+              pragmatische Lösungen zu entwickeln.
             </p>
             <p className="mt-4 max-w-lg text-base leading-relaxed text-ivory/70">
-              Sie berät Unternehmen, Führungskräfte und Organisationen an den
-              Schnittstellen, an denen klassische Fachgrenzen häufig nicht weiterhelfen.
+              Sie arbeitet besonders gerne mit Unternehmern, Start-ups und
+              mittelständischen Unternehmen, die wachsen, Neues ausprobieren oder
+              schwierige Entscheidungen treffen müssen.
             </p>
             <div className="mt-8">
               <Button href="/gruenderin" variant="onDark">

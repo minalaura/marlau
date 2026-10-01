@@ -6,7 +6,7 @@ import { services } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Leistungen",
   description:
-    "Executive Advisory, Strategy & Growth, Organisation & Transformation, Governance & Legal Strategy, People & Leadership sowie Social Impact & Non-Profit Strategy.",
+    "Strategic Sparring, Growth & Business Development, Innovation & New Business sowie Legal & Compliance Sparring für Unternehmer, Start-ups und den Mittelstand.",
 };
 
 export default function LeistungenPage() {
@@ -16,13 +16,13 @@ export default function LeistungenPage() {
         <Container className="max-w-3xl">
           <p className="text-xs uppercase tracking-widest2 text-sage mb-4">Leistungen</p>
           <h1 className="text-3xl md:text-5xl font-serif font-medium leading-tight text-navy">
-            Beratung dort, wo Entscheidungen komplex werden.
+            Nicht jede Entscheidung braucht ein Beratungsprojekt.
           </h1>
           <p className="mt-6 text-base leading-relaxed text-navy/70">
-            Unternehmerische Fragestellungen lassen sich selten ausschließlich
-            strategisch, rechtlich oder organisatorisch lösen. MARLAU verbindet diese
-            Perspektiven und entwickelt Lösungen, die der tatsächlichen Situation eines
-            Unternehmens gerecht werden.
+            Manchmal braucht es einfach einen starken Sparringspartner. MARLAU
+            begleitet Unternehmer, Start-ups und mittelständische Unternehmen bei
+            Wachstum, Innovation und schwierigen Entscheidungen – unabhängig und
+            ohne starre Beratungsframeworks.
           </p>
         </Container>
       </section>
@@ -46,32 +46,24 @@ export default function LeistungenPage() {
                   {service.intro}
                 </p>
 
-                {service.slug === "governance-legal-strategy" ? (
-                  <>
-                    <p className="mt-4 text-xs leading-relaxed text-navy/50 italic">
-                      MARLAU ist keine Rechtsanwaltskanzlei. Soweit eine eigenständige
-                      Rechtsberatung erforderlich ist, erfolgt diese nur im rechtlich
-                      zulässigen Rahmen oder in Zusammenarbeit mit entsprechend
-                      zugelassenen Partnern.
-                    </p>
-                    <p className="mt-4 flex flex-wrap gap-x-6 gap-y-1 text-sm">
-                      <a
-                        href="/leistungen/datenschutzbeauftragter"
-                        className="underline text-navy hover:text-sea"
-                      >
-                        Mehr zu externer Datenschutzbeauftragter
-                      </a>
-                      <a
-                        href="/leistungen/audit"
-                        className="underline text-navy hover:text-sea"
-                      >
-                        Audit-Pakete ansehen
-                      </a>
-                    </p>
-                  </>
+                {service.slug === "legal-compliance-sparring" ? (
+                  <p className="mt-4 flex flex-wrap gap-x-6 gap-y-1 text-sm">
+                    <a
+                      href="/leistungen/datenschutzbeauftragter"
+                      className="underline text-navy hover:text-sea"
+                    >
+                      Mehr zu externer Datenschutzbeauftragter
+                    </a>
+                    <a
+                      href="/leistungen/audit"
+                      className="underline text-navy hover:text-sea"
+                    >
+                      Audit-Pakete ansehen
+                    </a>
+                  </p>
                 ) : null}
 
-                {service.slug === "social-impact-non-profit-strategy" ? (
+                {service.slug === "growth-business-development" ? (
                   <p className="mt-4 text-sm">
                     <a
                       href="/leistungen/purpose"

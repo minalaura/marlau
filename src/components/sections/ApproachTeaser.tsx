@@ -10,10 +10,10 @@ export function ApproachTeaser() {
         <SectionHeading
           eyebrow="Arbeitsweise"
           title="Independent thinking. Practical execution."
-          text="MARLAU arbeitet unabhängig, persönlich und mit einem klaren Blick auf das Wesentliche. Jedes Mandat beginnt mit einem fundierten Verständnis der unternehmerischen Situation. Darauf aufbauend entstehen Lösungen, die zur Organisation, ihrer Führung und ihrem tatsächlichen Handlungsspielraum passen."
+          text="MARLAU arbeitet unabhängig, persönlich und mit einem klaren Blick auf das Wesentliche. Jedes Gespräch beginnt mit Zuhören statt mit einer fertigen Methode. Darauf aufbauend entstehen Lösungen, die zur Situation, zu den Menschen und zum tatsächlichen Handlungsspielraum passen."
         />
 
-        <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
           {approachSteps.map((step) => (
             <div key={step.number}>
               <span className="text-sm text-sage tracking-widest2">{step.number}</span>

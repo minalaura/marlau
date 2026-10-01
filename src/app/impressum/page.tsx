@@ -42,7 +42,6 @@ export default function ImpressumPage() {
             <h2 className="text-xs uppercase tracking-widest2 text-navy/40 mb-2">
               Kontakt
             </h2>
-            <p>Telefon: [Telefonnummer]</p>
             <p>E-Mail: kontakt@marlau-advisory.com</p>
           </div>
 

@@ -15,8 +15,8 @@ export default function ImpressumPage() {
         </h1>
 
         <p className="mt-6 text-sm text-navy/60 italic">
-          Alle nachfolgenden Angaben sind Platzhalter und müssen vor Veröffentlichung
-          durch die tatsächlichen, rechtlich geprüften Angaben ersetzt werden.
+          Einzelne mit Klammern gekennzeichnete Angaben sind noch Platzhalter und
+          müssen vor Veröffentlichung ergänzt bzw. rechtlich geprüft werden.
         </p>
 
         <div className="mt-10 space-y-8 text-sm leading-relaxed text-navy/80">
@@ -24,18 +24,18 @@ export default function ImpressumPage() {
             <h2 className="text-xs uppercase tracking-widest2 text-navy/40 mb-2">
               Angaben gemäß § 5 TMG / § 18 Abs. 2 MStV
             </h2>
-            <p>[Vollständiger Unternehmensname]</p>
-            <p>[Rechtsform]</p>
-            <p>[Straße und Hausnummer]</p>
-            <p>[PLZ und Ort]</p>
-            <p>[Land]</p>
+            <p>MARLAU Advisory UG (haftungsbeschränkt) i.G.</p>
+            <p>Unternehmergesellschaft (haftungsbeschränkt) in Gründung</p>
+            <p>Cosimastraße 121</p>
+            <p>81925 München</p>
+            <p>Deutschland</p>
           </div>
 
           <div>
             <h2 className="text-xs uppercase tracking-widest2 text-navy/40 mb-2">
               Vertreten durch
             </h2>
-            <p>[Vertretungsberechtigte Person]</p>
+            <p>Marina Schneider</p>
           </div>
 
           <div>
@@ -43,15 +43,18 @@ export default function ImpressumPage() {
               Kontakt
             </h2>
             <p>Telefon: [Telefonnummer]</p>
-            <p>E-Mail: [Kontaktadresse]</p>
+            <p>E-Mail: kontakt@marlau-advisory.com</p>
           </div>
 
           <div>
             <h2 className="text-xs uppercase tracking-widest2 text-navy/40 mb-2">
               Registereintrag
             </h2>
-            <p>Eintragung im Handelsregister: [Registergericht]</p>
-            <p>Registernummer: [Registernummer]</p>
+            <p>
+              Die Gesellschaft befindet sich in Gründung (i.G.); eine Eintragung im
+              Handelsregister liegt noch nicht vor. Registergericht und
+              Registernummer werden nach erfolgter Eintragung ergänzt.
+            </p>
           </div>
 
           <div>
@@ -60,7 +63,7 @@ export default function ImpressumPage() {
             </h2>
             <p>
               Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:
-              [USt-IdNr.]
+              [wird nach Eintragung ergänzt]
             </p>
           </div>
 
@@ -80,7 +83,7 @@ export default function ImpressumPage() {
             <h2 className="text-xs uppercase tracking-widest2 text-navy/40 mb-2">
               Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
             </h2>
-            <p>[Name, Anschrift wie oben]</p>
+            <p>Marina Schneider, Cosimastraße 121, 81925 München</p>
           </div>
 
           <div>
@@ -89,10 +92,18 @@ export default function ImpressumPage() {
             </h2>
             <p>
               Die Europäische Kommission stellt eine Plattform zur
-              Online-Streitbeilegung (OS) bereit: [Link ergänzen]. Zur Teilnahme an
-              einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
-              sind wir nicht verpflichtet und nicht bereit, sofern nicht anders
-              angegeben.
+              Online-Streitbeilegung (OS) bereit:{" "}
+              <a
+                href="https://ec.europa.eu/consumers/odr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-navy"
+              >
+                https://ec.europa.eu/consumers/odr/
+              </a>
+              . Zur Teilnahme an einem Streitbeilegungsverfahren vor einer
+              Verbraucherschlichtungsstelle sind wir nicht verpflichtet und nicht
+              bereit, sofern nicht anders angegeben.
             </p>
           </div>
         </div>

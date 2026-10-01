@@ -68,18 +68,6 @@ export default function ImpressumPage() {
 
           <div>
             <h2 className="text-xs uppercase tracking-widest2 text-navy/40 mb-2">
-              Berufsrechtliche Hinweise
-            </h2>
-            <p>
-              [Berufsrechtliche Hinweise ergänzen, sofern einschlägig. MARLAU tritt
-              nicht als Rechtsanwaltskanzlei auf; sofern einzelne Tätigkeiten einer
-              berufsrechtlichen Erlaubnis bedürfen, sind die entsprechenden Angaben
-              hier zu ergänzen.]
-            </p>
-          </div>
-
-          <div>
-            <h2 className="text-xs uppercase tracking-widest2 text-navy/40 mb-2">
               Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
             </h2>
             <p>Marina Schneider, Cosimastraße 121, 81925 München</p>

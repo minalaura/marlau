@@ -47,18 +47,12 @@ export default function LeistungenPage() {
                 </p>
 
                 {service.slug === "legal-compliance-sparring" ? (
-                  <p className="mt-4 flex flex-wrap gap-x-6 gap-y-1 text-sm">
+                  <p className="mt-4 text-sm">
                     <a
                       href="/leistungen/datenschutzbeauftragter"
                       className="underline text-navy hover:text-sea"
                     >
                       Mehr zu externer Datenschutzbeauftragter
-                    </a>
-                    <a
-                      href="/leistungen/audit"
-                      className="underline text-navy hover:text-sea"
-                    >
-                      Audit-Pakete ansehen
                     </a>
                   </p>
                 ) : null}

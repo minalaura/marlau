@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Formularerkennung</title>
+  </head>
+  <body>
+    <!--
+      Diese Datei wird nie angezeigt. Sie dient ausschließlich dazu, dass
+      Netlify beim Deploy das Formularschema des React-Kontaktformulars
+      (src/components/ContactForm.tsx) erkennt, da dieses clientseitig
+      gerendert wird.
+    -->
+    <form name="kontakt" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="kontakt" />
+      <input name="bot-field" />
+      <input name="vorname" />
+      <input name="nachname" />
+      <input name="unternehmen" />
+      <input name="position" />
+      <input name="email" />
+      <input name="telefon" />
+      <textarea name="anliegen"></textarea>
+      <input name="kontaktweg" />
+      <input type="checkbox" name="datenschutz" />
+      <input name="klarheits-check-ergebnis" />
+    </form>
+  </body>
+</html>

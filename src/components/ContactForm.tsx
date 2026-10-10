@@ -2,43 +2,51 @@
 
 import { useSearchParams } from "next/navigation";
 import { useState, type FormEvent } from "react";
-import { site } from "@/lib/constants";
 
 const inputClasses =
   "w-full border border-navy/20 bg-ivory px-4 py-3 text-sm text-navy placeholder:text-navy/35 focus:border-sage focus:outline-none transition-colors";
 
 const labelClasses = "text-xs uppercase tracking-widest2 text-navy/50";
 
+function encode(data: Record<string, string>) {
+  return Object.entries(data)
+    .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
+    .join("&");
+}
+
 export function ContactForm() {
   const searchParams = useSearchParams();
   const ergebnis = searchParams.get("ergebnis");
   const anliegenPrefill = searchParams.get("anliegen");
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const form = new FormData(event.currentTarget);
+    setError(false);
+    setSubmitting(true);
 
-    const lines = [
-      `Name: ${form.get("vorname")} ${form.get("nachname")}`,
-      `Unternehmen: ${form.get("unternehmen")}`,
-      `Position: ${form.get("position") || "–"}`,
-      `E-Mail: ${form.get("email")}`,
-      `Telefon: ${form.get("telefon") || "–"}`,
-      `Gewünschte Kontaktaufnahme: ${form.get("kontaktweg")}`,
-      ergebnis ? `Klarheits-Check Ergebnis: ${ergebnis}` : null,
-      "",
-      "Anliegen:",
-      String(form.get("anliegen") ?? ""),
-    ].filter(Boolean);
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    const data: Record<string, string> = { "form-name": "kontakt" };
+    formData.forEach((value, key) => {
+      data[key] = String(value);
+    });
 
-    const subject = encodeURIComponent(
-      `Erstgespräch-Anfrage: ${form.get("vorname")} ${form.get("nachname")}`
-    );
-    const body = encodeURIComponent(lines.join("\n"));
-
-    window.location.href = `mailto:${site.email}?subject=${subject}&body=${body}`;
-    setSubmitted(true);
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode(data),
+      });
+      if (!response.ok) throw new Error("Submission failed");
+      setSubmitted(true);
+    } catch {
+      setError(true);
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   if (submitted) {
@@ -46,21 +54,37 @@ export function ContactForm() {
       <div className="border border-navy/15 bg-stone/15 p-8 md:p-10">
         <h3 className="text-xl font-serif text-navy">Vielen Dank.</h3>
         <p className="mt-3 text-sm leading-relaxed text-navy/70">
-          Ihr E-Mail-Programm sollte sich mit einer vorbereiteten Nachricht geöffnet
-          haben. Bitte senden Sie diese ab, damit wir Ihre Anfrage erhalten. Wir melden
-          uns in der Regel innerhalb von zwei Werktagen.
+          Ihre Anfrage ist bei uns eingegangen. Wir melden uns in der Regel
+          innerhalb von zwei Werktagen.
         </p>
       </div>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit} className="grid gap-6">
+    <form
+      name="kontakt"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      onSubmit={handleSubmit}
+      className="grid gap-6"
+    >
+      <input type="hidden" name="form-name" value="kontakt" />
+      <p className="hidden">
+        <label>
+          Bitte nicht ausfüllen: <input name="bot-field" />
+        </label>
+      </p>
+
       {ergebnis ? (
-        <p className="text-xs text-sage border border-sage/40 bg-sage/5 px-4 py-3">
-          Klarheits-Check Ergebnis: <strong>{ergebnis}</strong> — wird automatisch an
-          Ihre Nachricht angehängt.
-        </p>
+        <>
+          <input type="hidden" name="klarheits-check-ergebnis" value={ergebnis} />
+          <p className="text-xs text-sage border border-sage/40 bg-sage/5 px-4 py-3">
+            Klarheits-Check Ergebnis: <strong>{ergebnis}</strong> — wird automatisch an
+            Ihre Nachricht angehängt.
+          </p>
+        </>
       ) : null}
 
       <div className="grid gap-6 sm:grid-cols-2">
@@ -132,11 +156,23 @@ export function ContactForm() {
         </span>
       </label>
 
+      {error ? (
+        <p className="text-sm text-red-700 border border-red-300 bg-red-50 px-4 py-3">
+          Beim Senden ist etwas schiefgelaufen. Bitte versuchen Sie es erneut
+          oder schreiben Sie uns direkt an{" "}
+          <a href="mailto:kontakt@marlau-advisory.com" className="underline">
+            kontakt@marlau-advisory.com
+          </a>
+          .
+        </p>
+      ) : null}
+
       <button
         type="submit"
-        className="mt-2 inline-flex w-fit items-center px-7 py-3.5 text-sm tracking-wide bg-navy text-ivory hover:bg-sea transition-colors duration-300 ease-quiet"
+        disabled={submitting}
+        className="mt-2 inline-flex w-fit items-center px-7 py-3.5 text-sm tracking-wide bg-navy text-ivory hover:bg-sea transition-colors duration-300 ease-quiet disabled:opacity-60"
       >
-        Gespräch anfragen
+        {submitting ? "Wird gesendet…" : "Gespräch anfragen"}
       </button>
     </form>
   );

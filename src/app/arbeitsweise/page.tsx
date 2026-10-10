@@ -74,11 +74,6 @@ export default function ArbeitsweisePage() {
           <p className="mt-10 max-w-xl text-sm text-navy/50 italic">
             Konkrete Konditionen werden individuell je Mandat abgestimmt.
           </p>
-          <p className="mt-4 text-sm">
-            <a href="/leistungen/audit" className="underline text-navy hover:text-sea">
-              Strukturierter Einstieg: die MARLAU Audit-Pakete
-            </a>
-          </p>
         </Container>
       </section>
 

@@ -8,12 +8,6 @@ const inputClasses =
 
 const labelClasses = "text-xs uppercase tracking-widest2 text-navy/50";
 
-function encode(data: Record<string, string>) {
-  return Object.entries(data)
-    .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
-    .join("&");
-}
-
 export function ContactForm() {
   const searchParams = useSearchParams();
   const ergebnis = searchParams.get("ergebnis");
@@ -29,16 +23,16 @@ export function ContactForm() {
 
     const form = event.currentTarget;
     const formData = new FormData(form);
-    const data: Record<string, string> = { "form-name": "kontakt" };
+    const data: Record<string, string> = {};
     formData.forEach((value, key) => {
       data[key] = String(value);
     });
 
     try {
-      const response = await fetch("/", {
+      const response = await fetch("/api/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode(data),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
       });
       if (!response.ok) throw new Error("Submission failed");
       setSubmitted(true);
@@ -62,15 +56,7 @@ export function ContactForm() {
   }
 
   return (
-    <form
-      name="kontakt"
-      method="POST"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-      onSubmit={handleSubmit}
-      className="grid gap-6"
-    >
-      <input type="hidden" name="form-name" value="kontakt" />
+    <form onSubmit={handleSubmit} className="grid gap-6">
       <p className="hidden">
         <label>
           Bitte nicht ausfüllen: <input name="bot-field" />

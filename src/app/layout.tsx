@@ -53,6 +53,34 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main>{children}</main>
         <Footer />
+
+        {/*
+          Statisches, verstecktes Duplikat des Kontaktformulars (ContactForm.tsx).
+          Netlify erkennt Formulare beim Deploy nur in vorgerenderten HTML-Seiten;
+          das echte Formular wird clientseitig gerendert (useSearchParams) und
+          erscheint deshalb nicht im statischen Output. Dieses Layout wird dagegen
+          für jede Seite serverseitig vorgerendert, daher landet es zuverlässig im
+          Deploy-HTML und registriert das Formularschema bei Netlify.
+        */}
+        <form
+          name="kontakt"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          hidden
+        >
+          <input type="hidden" name="form-name" value="kontakt" />
+          <input name="bot-field" />
+          <input name="vorname" />
+          <input name="nachname" />
+          <input name="unternehmen" />
+          <input name="position" />
+          <input name="email" />
+          <input name="telefon" />
+          <textarea name="anliegen" />
+          <input name="kontaktweg" />
+          <input type="checkbox" name="datenschutz" />
+          <input name="klarheits-check-ergebnis" />
+        </form>
       </body>
     </html>
   );
